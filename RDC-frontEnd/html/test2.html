@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <script>
+        // 修改用户信息
+        axios.post('http://47.100.42.144:3389/user/changeUserInfo', {
+            userId: '118',
+            nickname: 'MaNqo',
+            introduction: '这是一个测试'
+        })
+            .then(function (response) {
+                console.log(response);
+                axios.get('http://47.100.42.144:3389/user/getUserInfo', {
+                    params: {
+                        userId: 118,
+                    }
+                })
+                    .then(function (response) {
+                        console.log(response);
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+
+
+        // 查看用户信息
+
+    </script>
+</body>
+
+</html>

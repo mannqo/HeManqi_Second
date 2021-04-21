@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<body>
+    <script>
+        // 写文章
+        // axios.post('http://47.100.42.144:3389/article/writeArticle', {
+        //     userId: 115,
+        //     title: '你好',
+        //     content: '这里什么都没有'
+        // })
+        //     .then(function (response) {
+        //         console.log(response.data);
+        //     }
+        //     )
+        //     .catch(function (error) {
+        //         console.log(error);
+        //     });
+        axios.get('http://47.100.42.144:3389/user/getUserWriteArticles', {
+            params: {
+                userId: 115,
+                page: 1
+            }
+        })
+            .then(function (response) {
+                console.log(response.data);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        // 删除文章
+        axios.post('http://47.100.42.144:3389/article/deleteArticle', {
+            userId: '115',
+            articleId: '53'
+        })
+            .then(function (response) {
+                console.log(response);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    </script>
+</body>
+
+</html>
