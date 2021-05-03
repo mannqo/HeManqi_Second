@@ -1,0 +1,137 @@
+.first-login {
+    display: none;
+    position: fixed;
+    z-index: 300;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+.first-login .wrap {
+    position: relative;
+    z-index: 350;
+    left: 40%;
+    top: 20%;
+    width: 306px;
+    height: 288px;
+    background-color: #fff;
+    transition: all .2s;
+}
+.pandaLogo {
+    position: absolute;
+}
+.panda {
+    /* display: none; */
+    width: 120px;
+    height: 95px;
+    transform: translate(86px,-72px);
+}
+.panda-active {
+    display: none;
+    width: 120px;
+    height: 113px;
+    transform: translate(86px,-85px);
+}
+.panda-sleep {
+    display: none;
+    width: 104px;
+    height: 84px;
+    transform: translate(86px,-62px);
+}
+/* 登录 */
+.first-login .login {
+    padding: 20px;
+    font-size: 12px;
+}
+.first-login .login h2 {
+    float: left;
+    margin-bottom: 24px;
+}
+.first-login .login .tuichu {
+    float: right;
+    font-size: 20px;
+    color: rgb(113, 119, 124);
+    cursor: pointer;
+}
+.first-login input {
+    width: 256px;
+    height: 28px;
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+.first-login input:focus {
+    border: 1px solid #077fff;
+}
+.first-login .login button {
+    width: 270px;
+    height: 40px;
+    color: #fff;
+    background-color: #077fff;
+}
+.first-login .login p span {
+    display: inline-block;
+    padding-top: 8px;
+    color: #077fff;
+}
+.first-login .login a {
+    color: #077fff;
+    text-decoration: none;
+}
+.first-login .login p span:nth-child(2) {
+    position: absolute;
+    right: 18px;
+}
+/* 其他方式注册 */
+.first-login .iconList {
+    display: none;
+    width: 270px;
+    height: 45px;
+}
+.first-login .iconList .inner-icon {
+    display: inline-block;
+    position: relative;
+    width: 43px;
+    height: 43px;
+    margin: 8px 10px 0 20px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: rgb(244, 248, 251);
+}
+.first-login .iconList .inner-icon i {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    font-size: 24px;
+}
+.first-login .otherWay {
+    color: #077fff;
+    font-size: 14px;
+    margin-top: 14px;
+}
+.first-login .agree {
+    position: absolute;
+    bottom: 16px;
+    font-size: 14px;
+}
+.first-login .tishi {
+    opacity: 0;
+    position: absolute;
+    right: 350px;
+    top: 66px;
+    width: 110px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: rgba(0,0,0,0.4);
+    transition: all .2s;
+}
+.first-login .tishi p {
+    display: none;
+    text-align: center;
+    font-size: 14px;
+    line-height: 40px;
+    color: rgb(244, 248, 251);
+}
+
+
+

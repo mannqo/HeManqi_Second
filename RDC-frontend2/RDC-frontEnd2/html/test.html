@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="input">
+    <script>
+        let emojis = [{
+            name: '微笑',
+            src: '../emoji/slightly-smiling-face_1f642.png',
+        }, {
+            name: '亲亲',
+            src: '../emoji/face-throwing-a-kiss_1f618.png'
+        }, {
+            name: '爱心',
+            src: '../emoji/beating-heart_1f493.png'
+        }, {
+            name: '沮丧',
+            src: '../emoji/disappointed-but-relieved-face_1f625.png'
+        }, {
+            name: 'omg',
+            src: '../emoji/face-screaming-in-fear_1f631.png'
+        }, {
+            name: '尴尬',
+            src: '../emoji/face-with-rolling-eyes_1f644.png'
+        }, {
+            name: '笑哭',
+            src: '../emoji/face-with-tears-of-joy_1f602.png'
+        }, {
+            name: '啊这',
+            src: '../emoji/fearful-face_1f628.png'
+        }, {
+            name: '薯条',
+            src: '../emoji/french-fries_1f35f.png'
+        }, {
+            name: '黄脸',
+            src: '../emoji/full-moon-with-face_1f31d.png'
+        }, {
+            name: '黑脸',
+            src: '../emoji/new-moon-with-face_1f31a.png'
+        }, {
+            name: '哭哭',
+            src: '../emoji/loudly-crying-face_1f62d.png'
+        }, {
+            name: '猴子',
+            src: '../emoji/monkey-face_1f435.png'
+        }, {
+            name: '猪猪',
+            src: '../emoji/pig_1f416.png'
+        }, {
+            name: '失望',
+            src: '../emoji/pensive-face_1f614.png'
+        }, {
+            name: '粑粑',
+            src: '../emoji/pile-of-poo_1f4a9.png'
+        }, {
+            name: '脑没了',
+            src: '../emoji/shocked-face-with-exploding-head_1f92f.png'
+        }, {
+            name: '笑脸',
+            src: '../emoji/slightly-smiling-face_1f642.png'
+        }, {
+            name: '开心',
+            src: '../emoji/smiling-face-with-halo_1f607.png'
+        }, {
+            name: '哈哈',
+            src: '../emoji/smiling-face-with-open-mouth-and-cold-sweat_1f605.png'
+        }, {
+            name: '太阳',
+            src: '../emoji/sun-with-face_1f31e.png'
+        }, {
+            name: '思考',
+            src: '../emoji/thinking-face_1f914.png'
+        }, {
+            name: '嘻嘻',
+            src: '../emoji/white-smiling-face_263a.png'
+        }];
+        let input = document.getElementById('input');
+        function filterEmoji(input, emojis) {
+            let emojiReg = new RegExp('\\[' + emojis.name + '\\]|\\/' + emojis.name, 'gm');
+            let emojiResult = input.replace(emojiReg, '<img class="emoji" src="' + emojis.src + '"/>');
+            console.log(emojiReg);
+            console.log(emojiResult);
+            return emojiResult;
+        }
+        input.addEventListener('keyup', function () {
+            console.log(emojis);
+            filterEmoji(input.value, emojis[0]);
+        })
+    </script>
+</body>
+
+</html>

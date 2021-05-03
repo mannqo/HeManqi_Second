@@ -1,0 +1,263 @@
+.articleDetail {
+    display: none;
+    /* display: block; */
+}
+.articleDetail .editor {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height: 80px;
+}
+.articleDetail .touXiang {
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+    border-radius: 50%;
+}
+.articleDetail .rightNav {
+    top: 0;
+}
+.articleDetail .touXiang img {
+    border-radius: 50%;
+}
+.articleDetail .editor img {
+    border-radius: 50%;
+}
+.articleDetail .findOut {
+    margin-top: 20px;
+}
+.articleDetail .iconList {
+    position: fixed;
+}
+.articleDetail .functionIcon {
+    position: absolute;
+    top: 90px;
+    left: -72px;
+}
+.articleDetail .functionIcon .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.articleDetail .functionIcon p {
+    padding: 16px 0 24px 0;
+}
+.articleDetail .functionIcon i {
+    color: rgb(178, 186, 194);
+}
+.articleDetail .functionIcon .wrap:hover i{
+    color: rgb(138, 147, 160);
+}
+.articleDetail .articleContent .head {
+    display: flex;
+    margin-bottom: 30px;
+}
+.articleDetail .articleContent .head p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.articleDetail .contentAndComment {
+    width: 700px;
+}
+.articleDetail .articleContent {
+    width: 650px;
+    padding: 24px;
+    margin-top: 18px;
+    background-color: #fff;
+}
+.articleDetail .contentWrap {
+    display: inline-block;
+    width: 100%;
+}
+.articleDetail .articleContent .content p {
+    line-height: 50px;
+    text-indent: 2em;
+    color: #000;
+}
+.articleDetail .articleContent button {
+    position: absolute;
+    left: 550px;
+    top: 50px;
+    width: 90px;
+    height: 30px;
+    color: #fff;
+    background-color: rgb(146, 196, 82);
+    transition: all .1s;
+}
+.articleDetail .articleContent .notAlready {
+    width: 88px;
+    height: 28px;
+    color: rgb(146, 196, 82);
+    border: 1px solid rgb(146, 196, 82);
+    background-color: #fff;
+}
+.articleDetail .articleContent button:hover {
+    color: rgb(230,230,230);
+}
+.articleDetail .inputComment {
+    height: 100%;
+}
+.articleDetail .comment {
+    position: relative;
+    width: 612px;
+    padding: 30px 38px 20px 50px;
+    background-color: rgb(250, 251, 252);
+    margin: 20px 0;
+}
+.articleDetail .comment .before {
+    height: 46px;
+}
+
+.articleDetail .comment .touXiang {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+}
+.articleDetail input {
+    text-indent: 2em;
+    width: 534px;
+    height: 36px;
+    border: none;
+    background-color: #fff;
+}
+.articleDetail .comment input {
+    transform: translateX(60px);
+}
+.articleDetail input:focus {
+    width: 532px;
+    height: 34px;
+    border: 1px solid #077FFF;
+}
+.articleDetail .comment .pingLun {
+    display: none;
+    color: rgb(178, 186, 194);
+    font-size: 12px;
+    padding-left: 80px;
+    line-height: 50px;
+}
+.articleDetail .pingLun .button {
+    float: right;
+    transform: translateX(-20px);
+}
+
+.articleDetail .pingLun button {
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 6px;
+    background-color: rgb(151, 201, 253);
+}
+.articleDetail .commentList {
+    background-color: #fff;
+}
+.articleDetail .commentList li {
+    width: 554px;
+    padding: 20px 70px;
+    margin: 0 auto;
+    border-top: 1px solid rgb(230,230,230);
+} 
+.articleDetail .commentList li:first-child {
+    border: none;
+}
+.articleDetail .commentList li .touXiang {
+    width: 36px;
+    height: 36px;
+    float: left;
+}
+.articleDetail .commentList li .right {
+    display: flex;
+    flex-direction: column;
+}
+.articleDetail .commentList li .right p {
+    color: #000;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.articleDetail .commentList .wrap {
+    height: 80px;
+}
+.articleDetail .commentList .right .time {
+    font-size: 14px; 
+    color: rgb(113,119,124);
+}
+.articleDetail .commentList .answerList {
+    width: 512px;
+    bottom: 0;
+    transform: translate(56px,80px);
+}
+.articleDetail .commentList .answerList li {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 120px;
+    padding: 0;
+    transform: translateY(-80px);
+    background-color: rgb(250, 251, 252);
+}
+.articleDetail .commentList .answerList .answer {
+    width: 90%;
+    transform: translateX(24px);
+    padding-top: 26px;
+}
+.articleDetail .commentList .zanCai {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    transform: translateY(-24px);
+}
+.articleDetail .commentList .zanCai i {
+    text-align: center;
+}
+.articleDetail .commentList .zanCai div{
+    width: 50px;
+    height: 20px;
+}
+.articleDetail .commentList .zanCai .cai {
+    width: 40px;
+}
+.articleDetail .commentList .zanCai span{
+    font-size: 13px;
+}
+
+.articleDetail .commentList .after {
+    display: none;
+    width: 512px;
+    height: 100px;
+    margin-top: 10px;
+    padding: 8px;
+    transform: translateX(34px);
+    background-color: rgb(250, 251, 252);
+}
+.articleDetail .commentList .after input {
+    width: 486px;
+    transform: translate(6px,10px);
+}
+.articleDetail .commentList .after .pingLun {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(230,230,230);
+    font-size: 12px;
+    transform: translate(12px, 20px);
+}
+.articleDetail .contentAndComment .commentList .delete {
+    display: inline-block;
+    font-size: 14px;
+    width: 30px;
+    color: rgb(113,119,124) !important;
+    transform: translate(130px, -24px);
+}
+.articleDetail .delete:hover {
+    text-decoration: underline 2px solid rgb(113,119,124);
+}
+.articleDetail .contentAndComment .commentList .right .delete {
+    transform: translate(75px, -30px);
+}

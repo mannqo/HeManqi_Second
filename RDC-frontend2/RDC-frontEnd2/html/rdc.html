@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/writeArticle.css">
+    <link rel="stylesheet" href="../css/personalPage.css">
+    <link rel="stylesheet" href="../css/personalInfor.css">
+    <link rel="stylesheet" href="../css/articleDetail.css">
+    <title>掘金</title>
+</head>
+
+<body>
+    <div class="shouye">
+        <!-- 标题 -->
+        <header>
+            <div class="wrap">
+                <div class="container">
+                    <a href="#" class="navlogo"><img src="../img/logo.a7995ad.svg" alt="掘金"></a>
+                    <nav class="main-nav">
+                        <ul>
+                            <li>
+                                <ul class="header">
+                                    <li>首页</li>
+                                    <li>沸点</li>
+                                    <li>小册</li>
+                                    <li>活动</li>
+                                    <li class="offer"><a href="#"><img src="../img/offerlinmen.svg" alt="Offer临门"></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input type="text" placeholder="探索掘金">
+                                <i class="icon iconfont fangdajing">&#xe637;</i>
+                            </li>
+                            <li class="wrap-li">
+                                <div class="wrap-more">
+                                    <button class="article">写文章</button>
+                                    <div class="more"><i class="icon iconfont">&#xe65a;</i></div>
+                                    <div class="sendFei">发布沸点</div>
+                                </div>
+                            </li>
+                            <li><button class="sign-up">登录</button></li>
+                            <li>
+                                <div class="wrap">
+                                    <i class="icon iconfont lingdang">&#xe634;</i>
+                                    <div class="tou-xiang"></div>
+                                </div>
+                                <div class="moreList">
+                                    <ul>
+                                        <div class="navGroup">
+                                            <li><i class="icon iconfont moreIcon">&#xe652;</i>
+                                                <p>写文章</p>
+                                            </li>
+                                            <li><i class="icon iconfont moreIcon">&#xe618;</i>
+                                                <p>草稿</p>
+                                            </li>
+                                        </div>
+                                        <div class="navGroup">
+                                            <li><i class="icon iconfont moreIcon">&#xe607;</i>
+                                                <p class="tomyPersonal">我的主页</p>
+                                            </li>
+                                            <li><i class="icon iconfont moreIcon">&#xe60c;</i>
+                                                <p>我赞过的</p>
+                                            </li>
+                                            <li><i class="icon iconfont moreIcon">&#xe64e;</i>
+                                                <p>我的小册</p>
+                                            </li>
+                                            <li><i class="icon iconfont moreIcon">&#xe612;</i>
+                                                <p>我的收藏集</p>
+                                            </li>
+                                            <li><i class="icon iconfont moreIcon">&#xe69f;</i>
+                                                <p>标签管理</p>
+                                            </li>
+                                        </div>
+                                        <div class="navGroup">
+                                            <li><i class="icon iconfont moreIcon">&#xe608;</i>
+                                                <p>字学</p>
+                                            </li>
+                                        </div>
+                                        <div class="navGroup">
+                                            <li><i class="icon iconfont moreIcon">&#xe61c;</i>
+                                                <p>设置</p>
+                                            </li>
+                                            <li><i class="icon iconfont moreIcon">&#xe728;</i>
+                                                <p>关于</p><span>></span>
+                                            </li>
+                                        </div>
+                                        <div class="navGroup">
+                                            <li class="goOut"><i class="icon iconfont moreIcon">&#xeb45;</i>
+                                                <p>登出</p>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- 除了标头的主页内容 -->
+        <div class="view">
+            <div class="topNavcon">
+                <div class="container">
+                    <ul class="topNav">
+                        <li>推荐</li>
+                        <li>后端</li>
+                        <li>前端</li>
+                        <li>Android</li>
+                        <li>iOS</li>
+                        <li>人工智能</li>
+                        <li>开发工具</li>
+                        <li>代码人生</li>
+                        <li>阅读</li>
+                        <li class="manager">标签管理</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main">
+                <div class="container">
+                    <div class="leftNav">
+                        <ul class="header">
+                            <li>热门</li>
+                            <li>最新</li>
+                            <li>热榜</li>
+                        </ul>
+                        <ul class="mainList">
+                            <li>
+                                <div class="tiShi">
+                                    <p>请先进行登录</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rightNav">
+                        <div class="login">
+                            <h4>掘金 - juejin.cn</h4>
+                            <p>一个帮助开发者成长的社区</p>
+                            <div class="form">
+                                <p class="phone">+86</p>
+                                <i class="icon iconfont jiantou">&#xe65e;</i>
+                                <input type="text" class="phoneInput" placeholder="请输入手机号">
+                            </div>
+                            <div class="form">
+                                <div class="yanzheng">
+                                    <input type="text" placeholder="验证码">
+                                    <a href="#">获取验证码</a>
+                                </div>
+                            </div>
+                            <button class="liji-sign">立即登录</button>
+                            <div class="agree">
+                                <p>注册登录即表示</p>
+                                <p>同意 <a href="#">用户协议，隐私政策</a></p>
+                            </div>
+                        </div>
+                        <div class="yinLi-plan">
+                            <a href="#"><img src="../img/creatTrain.image" alt=""></a>
+                            <a href="#"><img src="../img/guess.image" alt=""></a>
+                        </div>
+                        <div class="juejin">
+                            <a href="#"><img src="../img/gotoJuejin.png" alt=""></a>
+                            <div class="load-client">
+                                <span class="QRcode"><img src="../img/QRCode.png" alt=""></span>
+                                <div class="load-p">
+                                    <p style="color: #000; font-size: 16px;">
+                                        下载掘金客户端
+                                    </p>
+                                    <p>
+                                        解锁更多技术团队热招职位
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="editorList">
+                            <div class="listHeader">
+                                <i class="icon iconfont">&#xe60c;</i>
+                                <span>作者榜</span>
+                            </div>
+                            <div class="userList">
+                                <div class="wrap">
+                                    <div class="user">
+                                        <a href="#">
+                                            <img src="../img/Jisoo.jpg" alt="">
+                                        </a>
+                                        <div class="about">
+                                            <p class="name">
+                                                Jisoo
+                                                <i class="icon iconfont lv4">&#xe61b;</i>
+                                            </p>
+                                            <p class="detail">
+                                                这里是个美女
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap">
+                                    <div class="user">
+                                        <a href="#">
+                                            <img src="../img/jennie.jpg" alt="">
+                                        </a>
+                                        <div class="about">
+                                            <p class="name">
+                                                Jennie
+                                                <i class="icon iconfont lv2">&#xe619;</i>
+                                            </p>
+                                            <p class="detail">
+                                                温柔与可爱并存
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap">
+                                    <div class="user">
+                                        <a href="#"><img src="../img/lisa.jpg" alt=""></a>
+                                        <div class="about">
+                                            <p class="name">
+                                                lalalalisa_m
+                                                <i class="icon iconfont lv2">&#xe619;</i>
+                                            </p>
+                                            <p class="detail">
+                                                BLACKPINK组合 泰国籍成员 LISA
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="all">
+                                    完整榜单
+                                    <i class="icon iconfont">&#xe65e;</i>
+                                </p>
+
+
+                            </div>
+                        </div>
+                        <div class="explain">
+                            <div class="wrap">
+                                <div class="user">
+                                    <img src="../img/juejin-Social.png" alt="">
+                                </div>
+                                <div class="about">
+                                    <p>掘金社区漫游指南</p>
+                                </div>
+                            </div>
+                            <div class="wrap">
+                                <div class="user">
+                                    <img src="../img/Google.png" alt="">
+                                </div>
+                                <div class="about">
+                                    <p>
+                                        下载掘金浏览区插件
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="wrap">
+                                <div class="user">
+                                    <img src="../img/translate.png" alt="">
+                                </div>
+                                <div class="about">
+                                    <p>
+                                        前往掘金翻译计划
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-Information">
+                            <p>
+                                <span>关于</span>
+                                <span>营业执照</span>
+                                <span>友情链接</span>
+                            </p>
+                            <p>
+                                <span>用户协议</span>
+                                <span>隐私政策</span>
+                                <span>使用指南</span>
+                            </p>
+                            <p>版权所有：北京北比信息技术有限公司</p>
+                            <p><a>京ICP备18012699号-3</a></p>
+                            <p><a>京公网安备11010802026719号 </a></p>
+                            <p>公司地址：北京市海淀区信息路甲28号13层B</p>
+                            <p>座13B-5</p>
+                            <p>公司座机：010-83434395</p>
+                            <p>举报邮箱：<a>feedback@xitu.io</a> </p>
+                            <p>©2021 掘金</p>
+                            <div class="icons">
+                                <i class="icon iconfont weibo">&#xe620;</i>
+                                <i class="icon iconfont weChat">&#xe68a;</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 文章详情 -->
+        <div class="articleDetail">
+            <div class="container">
+                <div class="iconList">
+                    <div class="functionIcon">
+                        <div class="wrap">
+                            <i class="icon iconfont">&#xe60c;</i>
+                        </div>
+                        <div class="wrap">
+                            <i class="icon iconfont">&#xe697;</i>
+                        </div>
+                        <div class="wrap"><i class="icon iconfont">&#xe621;</i>
+                        </div>
+                        <div class="wrap"><i class="icon iconfont">&#xe612;</i>
+                        </div>
+                        <div class="wrap"><i class="icon iconfont">&#xe695;</i>
+                        </div>
+                        <p>分享</p>
+                        <div class="wrap"><i class="icon iconfont">&#xe620;</i>
+                        </div>
+                        <div class="wrap"><i class="icon iconfont">&#xe666;</i>
+                        </div>
+                        <div class="wrap"><i class="icon iconfont">&#xe68a;</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentAndComment">
+                    <div class="contentWrap">
+                        <div class="articleContent">
+                            <!-- <div class="head">
+                                <div class="touXiang"></div>
+                                <h3>MaNqo<p>2021年04月19日</p>
+                                </h3>
+                                <button>已关注</button>
+                            </div>
+                            <div class="content">
+                                <h3 class="title">这是一个标题</h3>
+                                <p>
+                                    泡沫，我知道自己已经变成了一个不折不扣的笑话，在这里我求求您高抬贵手，别再继续整我了，我还要网恋，我还有美好的未来，求求你了，放过我吧！
+                                    别钓鱼了哥哥！我真的看不出来，如此明显的诱饵我这是愚蠢的鱼儿立马就上钩了，意识到自己上钩的那一刻，气急败坏的我可笑极了，你的一声上钩了上钩了更是让我羞愧难当，阶层的差异，智商的碾压，都让我在你面前永远抬不起头来，我只是一个为了成就你优越感而存在的无聊道具罢了，像我这样的小丑，活着又有什么意义呢我急了，手机电脑全砸了，我本来就有抑郁症，你一说我急了好像真的恼羞成怒，仿佛被看穿了一切躲在网络后面的我一样，这种感觉真的很不舒服，被看成了死死的，短短急了两个字，我所有伪装出来的坚强和强颜欢笑全部崩塌了，成了一个被人笑话的小丑！我不想再坚强了，玩心态，我输的什么都不剩了！
+                                    急了，我真的急了，就因为你一句话，我浑身抽搐，口吐白沫，大小便失禁了，多年来我在网络上伪装出来的上流和高端全都被你一一拆穿，像个丧家犬一样狼狈不堪，这种感觉真的快要窒息了，压得我喘不过气，网恋对象也不跟我用情侣头像了，这一次，我终于认清了互联网的冰冷，如果有来世，纵使世间万般疾苦，也不到互联网上做只老鼠！急了，我彻底急了，当你骂我的时候，我感同身受，好像那些事情真的发生了一样，你的唇枪舌剑让我觉得万箭穿心，我的手在抖，汗在流，舌头都咬破了，此时此刻我真的破防了，破大防了，你说的每一句话都能套在我的现实生活中，每个字对我来说都像中世纪骑士的长枪一样，狠狠扎在我的心上，我害怕了，害怕你会接着骂我，我卸载删除了一切社交软件，手机卡都拔了，把自己蒙在被窝里，一动不动，可是耳边还是不停环绕你的声音，我到底该怎么办？我到底该怎么办!确实！哥，我真的穷，如果真的是比现实的话强我好几倍！2018，我们这个低保家庭才迎来自己的第一部智能手机，三口人轮班使用每天每人8个小时，而我这种不知天高地厚的井底之蛙挑衅网络皇帝的行为属于是以卵击石，自不量力的我如今懂得了什么是弱肉强食，但在你的皇帝威严面前显得是那样一文不值，在您面前我永远是跳梁小丑的代名词！
+                                    这都是啥么鬼
+                                </p>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="inputComment">
+                            <div class="before">
+                                <div class="touXiang"></div>
+                                <input type="text" placeholder="输入评论...">
+                            </div>
+                            <div class="pingLun">
+                                <i class="icon iconfont">&#xe640; 表情</i>
+                                <i class="icon iconfont">&#xe667; 图片</i>
+                                <div class="button">
+                                    Ctrl or + Enter
+                                    <button>评论</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <ul class="commentList">
+                        <!-- <li>
+                            <div class="touXiang"></div>
+                            <div class="right">
+                                <p class="commentName">mannqo</p>
+                                <p class="comments">啥么鬼</p>
+                                <p class="time">1小时前</p>
+                                <p class="delete">删除</p>
+                            </div>
+                            <div class="zanCai">
+                                <i class="icon iconfont">&#xe60c;</i>
+                                <i class="icon iconfont">&#xe610;</i>
+                                <i class="icon iconfont">&#xe61f;</i>
+                            </div>
+                            <div class="after">
+                                <div class="before">
+                                    <input type="text" placeholder="输入评论...">
+                                </div>
+                                <div class="pingLun">
+                                    <div class="icon">
+                                        <i class="icon iconfont">&#xe640; 表情</i>
+                                        <i class="icon iconfont">&#xe667; 图片</i>
+                                    </div>
+                                    <div class="button">
+                                        Ctrl or ⌘ + Enter
+                                        <button>评论</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            这个是回复的ul
+                            <ul class="answerList">
+                                <li>
+                                    <div class="answer">
+                                        <div class="touXiang"></div>
+                                        <div class="right">
+                                            <p class="commentName">mannqo</p>
+                                            <p class="comments">啥么鬼</p>
+
+                                            <p class="time">1小时前</p>
+                                        </div>
+                                        <div class="zanCai">
+                                            <div class="zan">
+                                                <i class="icon iconfont">&#xe60c;</i>
+                                            </div>
+                                            <div class="cai"><i class="icon iconfont">&#xe610;</i>
+                                            </div>
+                                            <div class="reply"><i class="icon iconfont">&#xe61f;</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="answer">
+                                        <div class="touXiang"></div>
+                                        <div class="right">
+                                            <p class="commentName">mannqo</p>
+                                            <p class="comments">啥么鬼</p>
+                                            <p class="time">1小时前</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="answer">
+                                        <div class="touXiang"></div>
+                                        <div class="right">
+                                            <p class="commentName">mannqo</p>
+                                            <p class="comments">啥么鬼</p>
+                                            <p class="time">1小时前</p>
+                                        </div>
+                                        <p class="delete">删除</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="rightNav">
+                    <div class="personalAchievement">
+                        <div class="achieve">
+                            <h4>个人成就</h4>
+                            <div class="editor">
+                                <div class="touXiang"></div>
+                                <h3></h3>
+                            </div>
+                            <p>
+                                <i class="icon iconfont">&#xe60c;</i>
+                                获得点赞1,217
+                            </p>
+                            <p>
+                                <i class="icon iconfont">&#xe60d;</i>
+                                文章被阅读 9,666
+                            </p>
+                        </div>
+                    </div>
+                    <div class="juejin">
+                        <a href="#"><img src="../img/gotoJuejin.png" alt=""></a>
+                        <div class="load-client">
+                            <span class="QRcode"><img src="../img/QRCode.png" alt=""></span>
+                            <div class="load-p">
+                                <p style="color: #000; font-size: 16px;">
+                                    下载掘金客户端
+                                </p>
+                                <p>
+                                    解锁更多技术团队热招职位
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="findOut">
+                        <img src="../img/findOut.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 个人主页 -->
+        <div class="personalPage">
+            <div class="container">
+                <div class="personal">
+                    <div class="tou-xiang"></div>
+                    <div class="detail">
+                        <h2 class="userIdName"></h2>
+                        <p> + 你从事什么职业？</p>
+                        <p> + 你的人生格言是什么</p>
+                    </div>
+                    <div class="rightInformation">
+                        <div class="rightIcon">
+                            <i class="icon iconfont">&#xe620;</i>
+                            <i class="icon iconfont">&#xe64c;</i>
+                            <i class="icon iconfont">&#xe62b;</i>
+                        </div>
+                        <button>编辑个人资料</button>
+                    </div>
+                </div>
+                <div class="pageNavList">
+                    <ul>
+                        <li class="active">动态</li>
+                        <li>文章</li>
+                        <li>沸点</li>
+                        <li>
+                            赞<span></span>
+                            <i class="icon iconfont sanJiao">&#xe6b4;</i>
+                            <div class="star">
+                                <p>文章<span></span></p>
+                                <p>沸点<span></span></p>
+                            </div>
+                        </li>
+                        <li>小册</li>
+                        <li>更多<i class="icon iconfont sanJiao">&#xe6b4;</i>
+                            <div class="star">
+                                <p>收藏集</p>
+                                <p>关注</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 这个wrap是下拉列表的内容 -->
+                <div class="wrap">
+                    <div class="dongTai">
+                        <h3>动态</h3>
+                        <div class="nothingHere">
+                            <img src="../img/nothing.svg" alt="">
+                            <p>这里什么都没有</p>
+                        </div>
+                    </div>
+
+                    <!-- 这个likeWrap是关注小li下面的内容 -->
+                    <div class="likeWrap">
+                        <div class="person-you-like">
+                            <h3>关注</h3>
+                            <ul>
+                                <li class="black">关注用户</li>
+                                <li>关注的团队</li>
+                                <li>关注者</li>
+                                <li>关注标签</li>
+                            </ul>
+                        </div>
+                        <div class="likeIt">
+                            <ul class="mySubscribe">
+                                <!-- <li>
+                                    <div class="user"><img src="../img/js.png" alt=""></div>
+                                    <h4>JavaScript</h4>
+                                    <p>你好哦有</p>
+                                    <button class="btn notAlready">关注</button>
+                                </li> -->
+                            </ul>
+                            <ul class="subscribeMe">
+
+                            </ul>
+                            <div class="nothingHere">
+                                <img src="../img/nothing.svg" alt="">
+                                <p>这里什么都没有</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dongTai">
+                        <h3>沸点</h3>
+                        <div class="nothingHere">
+                            <img src="../img/nothing.svg" alt="">
+                            <p>这里什么都没有</p>
+                        </div>
+                    </div>
+                    <!-- 这个writeWrap是写文章下面的内容 -->
+                    <div class="writeWrap">
+                        <div class="person-you-like">
+                            <h3>文章</h3>
+                            <ul>
+                                <li class="black">热门</li>
+                                <li>最新</li>
+                            </ul>
+                        </div>
+                        <div class="detailArticle">
+                            <ul>
+                                <!-- <li>
+                                    <p>hmq1 · 11小时前 · JavaScript</p>
+                                    <h3>JS中this的指向</h3>
+                                    <div class="zan more"><i class="icon iconfont">&#xe60c;<span
+                                                class="number">0</span></i>
+                                    </div>
+                                    <div class="cai more"><i class="icon iconfont">&#xe621;<span
+                                                class="number">0</span></i></div>
+                                    <div class="moreChoose">
+                                        <span class="share"><i class="icon iconfont">&#xeb45;</i></span>
+                                        <span class="deleteMore">···</span>
+                                    </div>
+                                    <div class="editAndDelete">
+                                        <p>编辑</p>
+                                        <p>删除</p>
+                                    </div>
+                                </li> -->
+                            </ul>
+                            <div class="nothing">
+                                <img src="../img/nothing.svg" alt="">
+                                <p>这里什么都没有</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dongTai">
+                        <h3>小册</h3>
+                        <div class="nothingHere">
+                            <img src="../img/nothing.svg" alt="">
+                            <p>这里什么都没有</p>
+                        </div>
+                    </div>
+                    <!-- 这个赞是写文章下面的内容 -->
+                    <div class="liZan">
+                        <div class="person-you-like">
+                            <h3>赞</h3>
+                            <ul class="wenFei">
+                                <li>文章<span>(0)</span></li>
+                                <li>沸点<span>(0)</span></li>
+                            </ul>
+                        </div>
+                        <div class="zanIt">
+                            <ul class="detailArticle"></ul>
+                        </div>
+                        <div class="nothingHere">
+                            <img src="../img/nothing.svg" alt="">
+                            <p>这里什么都没有</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="personalAchievement">
+                    <div class="achieve">
+                        <h4>个人成就</h4>
+                        <p>
+                            <i class="icon iconfont">&#xe60c;</i>
+                            获得点赞1,217
+                        </p>
+                        <p>
+                            <i class="icon iconfont">&#xe60d;</i>
+                            文章被阅读 9,666
+                        </p>
+                    </div>
+                    <div class="personalLiker">
+                        <div>
+                            <h4>关注了</h4>
+                            <h5>0</h5>
+                        </div>
+                        <div>
+                            <h4>关注者</h4>
+                            <h5>0</h5>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <p>收藏集<span class="personNumber">0</span></p>
+                        <p>关注标签<span class="personNumber">1</span></p>
+                        <p>加入于<span class="personNumber">2021-04-16</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 个人(编辑)资料 -->
+        <div class="personalInformation">
+            <div class="detailMessage">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <i class="icon iconfont infor">&#xe65e;</i>
+                            返回个人主页
+                        </li>
+                        <li>个人资料</li>
+                        <li>账号设置</li>
+                        <li>简历管理</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="detailList">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <h1 style="color: #000;">个人资料</h1>
+                        </li>
+                        <li class="change">
+                            <span class="head">头像</span>
+                            <div class="headPhoto">
+                                <div class="tou-xiang"></div>
+                                <div class="actionBox">
+                                    <p>支持jpg、png、jpeg格式大小5M以内的图片</p>
+                                    <form>
+                                        点击上传
+                                        <input id="file" type="file" accept="image/gif, image/jpeg, image/png">
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>用户名</span>
+                            <div class="changeHead">
+                                <div class="changeHeadWrap" style="display: inline-block;">
+                                    <input type="text" placeholder="昵称">
+                                </div>
+                                <i class="icon iconfont changeInfor">&#xe6e5;修改</i>
+                                <div class="toSave">
+                                    <span class="save">保存</span>
+                                    <span class="cancel">取消</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>职位</span>
+                            <div class="changeHead">
+                                <input type="text" placeholder="填写你的职位">
+                                <i class="icon iconfont changeInfor">&#xe6e5;修改</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>公司</span>
+                            <div class="changeHead">
+                                <input type="text" placeholder="填写你的公司">
+                                <i class="icon iconfont changeInfor">&#xe6e5;修改</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>个人介绍</span>
+                            <div class="changeHead">
+                                <div class="changeHeadWrap" style="display: inline-block;">
+                                    <input type="text" placeholder="填写职业技能、擅长的事情、喜欢的事情等">
+                                </div>
+                                <i class="icon iconfont changeInfor">&#xe6e5;修改</i>
+                                <div class="toSave">
+                                    <span class="save">保存</span>
+                                    <span class="cancel">取消</span>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <span>个人主页</span>
+                            <div class="changeHead">
+                                <input type="text" placeholder="填写你的个人主页">
+                                <i class="icon iconfont changeInfor">&#xe6e5;修改</i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 写文章页面 -->
+        <div class="writeArticle">
+            <div class="articleContainer">
+                <h2 class="sendTitle">发布文章</h2>
+                <div class="editScale">
+                    <div class="articleTitle">
+                        <div>文章标题</div>
+                        <input class="title" type="text" placeholder="输入文章标题...">
+                    </div>
+                    <div class="content">
+                        <div class="iconList">
+                            <i class="icon iconfont">&#xe609;</i>
+                            <i class="icon iconfont">&#xe606;</i>
+                            <i class="icon iconfont">&#xe616;</i>
+                            <i class="icon iconfont">&#xeaf0;</i>
+                            <i class="icon iconfont">&#xe6e5;</i>
+                            <i class="icon iconfont">&#xe691;</i>
+                            <i class="icon iconfont">&#xe667;</i>
+                            <i class="icon iconfont">&#xe6da;</i>
+                            <i class="icon iconfont">&#xe60a;</i>
+                        </div>
+                        <textarea name="edit" id="edit" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="articleTitle catagory">
+                        <div>文章分类</div>
+                        <input class="input" type="text">
+                    </div>
+                    <div class="end">
+                        <button class="send">发布文章</button>
+                        <button class="return">返回主页</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 登录页面 -->
+    <div class="first-login">
+        <div class="wrap">
+            <div class="pandaLogo">
+                <img src="../img/panda.png" class="panda" alt="">
+                <img src="../img/pandaActive.png" class="panda-active" alt="">
+                <img src="../img/pandasleep.png" class="panda-sleep" alt="">
+            </div>
+            <div class="login">
+                <h2>账密登录</h2>
+                <span class="tuichu">x</span>
+                <input class="username" type="text" placeholder="邮箱/手机号（国际号码加区号）">
+                <input class="password" type="password" placeholder="请输入密码">
+                <button class="sign-up">登录</button>
+                <div class="iconList">
+                    <p>
+                        <span>手机登录</span>
+                        <span>忘记密码</span>
+                    </p>
+                    <div class="inner-icon">
+                        <i class="icon iconfont weibo">&#xe620;</i>
+                    </div>
+                    <div class="inner-icon weChat">
+                        <i class="icon iconfont">&#xe68a;</i>
+                    </div>
+                    <div class="inner-icon">
+                        <i class="icon iconfont">&#xe64c;</i>
+                    </div>
+                </div>
+                <p class="otherWay">其他登录方式</p>
+                <p class="agree">登录注册即表示同意 <a href="#">用户协议、隐私政策</a></p>
+            </div>
+        </div>
+        <div class="tishi">
+            <p>请填写手机号</p>
+            <p>请填写密码</p>
+            <p>账号或密码错误</p>
+        </div>
+    </div>
+
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="../js/request.js"></script>
+<script src="../js/changeInfor.js"></script>
+<script src="../js/login.js"></script>
+<script src="../js/shouye.js"></script>
+<script src="../js/writeArticle.js"></script>
+<script src="../js/personalPage.js"></script>
+<script src="../js/like.js"></script>
+<script src="../js/ariticleDetail.js"></script>
+
+
+</html>
