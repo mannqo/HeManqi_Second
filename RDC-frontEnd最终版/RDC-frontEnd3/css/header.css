@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+    background-color: rgb(244, 245, 245)
+}
+
+ul {
+    list-style: none;
+    color: rgb(113, 119, 124);
+    cursor: pointer;
+}
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.container:after {
+    content: '';
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+input {
+    outline: none;
+}
+.shouye p {
+    color: rgb(113, 119, 124);
+    cursor: pointer;
+}
+a {
+    cursor: pointer;
+    background-color: #fff;
+}
+img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+/* 头部logo */
+header {
+    width: 100%;
+    height: 60px;
+}
+header .wrap {
+    position: fixed;
+    z-index: 200;
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(0,0,0, .1);
+    transition: all .3s;
+}
+header .navlogo {
+    position: absolute;
+    width: 98px;
+}
+header .navlogo img{
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+}
+header .main-nav {
+    position: absolute;
+    width: 840px;
+    left: 130px;
+}
+header .main-nav .tou-xiang img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+/* 首页列表 */
+header .main-nav li .header {
+    margin-right: 20px;
+}
+header .main-nav li .header .offer {
+    padding-top: 6px;
+}
+header .main-nav li{
+    float: left;
+    padding: 0 16px 0 14px;
+    line-height: 60px;
+}
+header .main-nav li:nth-child(1) {
+    color: #007FFF;
+}
+header .main-nav li .header li:hover {
+    color: #007FFF;
+}
+/* 探索掘金 */
+header .main-nav li input {
+    width: 166px;
+    height: 30px;
+    padding: 0 0 0 12px;
+    font-size: 12px;
+    background-color: rgb(249, 250, 251);
+    border: 1px solid rgb(230,230,230);
+    border-radius: 2px;
+}
+header .main-nav:nth-child(3) {
+    position: relative;
+}
+header .main-nav button {
+    height: 30px;
+    border: 1px solid #007FFF;
+    border-radius: 3px;
+}
+/* 写文章 */
+header .main-nav .wrap-more {
+    position: relative;
+    top: 16px;
+    width: 76px;
+    height: 28px;
+    background-color: #007FFF;
+    border: 1px solid #007FFF;
+    border-radius: 3px; 
+}
+header .main-nav .wrap-more .sendFei {
+    display: none;
+    position: absolute;
+    top: 30px;
+    width: 78px;
+    height: 26px;
+    padding: 5px 0;
+    color: #007FFF;
+    line-height: 26px;
+    text-align: center;
+    border: 1px solid rgb(0,0,0, .1);
+}
+header .main-nav .wrap-li {
+    padding-right: 0;
+}
+header .main-nav .article {
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    color: #fff;
+    background-color: #007FFF;
+}
+header .main-nav .article:hover {
+    background-color: rgb(3, 113, 223);
+}
+header .main-nav .more {
+    position: absolute;
+    right: 2px;
+    height: 28px;
+    line-height: 30px;
+    color: #fff;
+}
+header .main-nav .more:hover {
+    background-color: rgb(3, 113, 223);
+}
+/* 登录 */
+header .main-nav .sign-up {
+    width: 70px;
+    height: 30px;
+    margin-left: 10px;
+    color: #007FFF;
+    background-color: #fff;
+}
+
+/* 登陆后出现的logo和头像 */
+
+.shouye .topNavcon ul li:last-child {
+    display: none;
+}
+.shouye .main-nav ul li .wrap {
+    display: none;
+    width: 85px;
+}
+.shouye .main-nav ul li .wrap .tou-xiang {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    transform: translate(24px,7px);
+}
+.view .topNavcon .manager{
+    transform: translateX(326px);
+}
+
+/* 点击头像显示更多 */
+.main-nav ul .moreList {
+    display: none;
+    position: absolute;
+    z-index: 500;
+    top: 61px;
+    left: 666px;
+    width: 160px;
+    box-shadow:  0 4px 8px 0 rgb(0,0,0, .3);
+    background-color: #fff;
+}
+.main-nav ul .moreList li {
+    position: relative;
+    float: none;
+    padding: 6px 12px 6px 12px;
+    height: 20px;
+    line-height: 32px;
+    color: rgb(113, 119, 124);
+}
+.main-nav ul .moreList li:hover {
+    background-color: rgb(230,230,230);
+}
+
+.main-nav ul .moreList .navGroup {
+    padding: 12px 0 12px 0;
+    border-bottom: 1px solid rgb(230,230,230);
+}
+.main-nav ul .moreList li p {
+    position: absolute;
+    left: 44px;
+    top: 0;
+    font-size: 15px;
+}
+.main-nav ul .moreList li span {
+    position: absolute;
+    top: 0;
+    right: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(173, 159, 164);
+}

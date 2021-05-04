@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <script>
+        let url = 'http://47.100.42.144:3389/';
+        let arr = [];
+        axios.get(url + 'user/getMySubscribe?userId=116')
+            .then(function (response) {
+                let res3 = response.data.data;
+                console.log(res3);
+                for (let i = 0; i < res3.length; i++) {
+                    console.log(res3[i]);
+                    arr.push(res3[i]);
+                }
+                console.log(arr);
+            })
+
+    </script>
+</body>
+
+</html>
